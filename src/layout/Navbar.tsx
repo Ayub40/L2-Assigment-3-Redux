@@ -6,9 +6,9 @@ export default function Navbar() {
             <div className="flex items-center">
                 <span className="font-bold ml-2">Library Management System</span>
             </div>
-            <Link to="/books">All Books</Link>
-            <Link to="/create-book">Add Books</Link>
-            <Link to="/borrow-summary">Borrow Summary</Link>
+            <Link className="border p-1 pl-3 pr-3 rounded bg-gray-500 text-white" to="/books">All Books</Link>
+            <Link className="border p-1 pl-3 pr-3 rounded bg-gray-500 text-white" to="/create-book">Add Books</Link>
+            <Link className="border p-1 pl-3 pr-3 rounded bg-gray-500 text-white" to="/borrow-summary">Borrow Summary</Link>
             <div className="ml-auto">
                 {/* <ModeToggle /> */}
             </div>

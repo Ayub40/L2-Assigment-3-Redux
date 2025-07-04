@@ -8,3 +8,12 @@ export interface IBook {
     copies: number;
     available: boolean,
 }
+
+export interface IBorrow {
+    book: {
+        title: string;
+        isbn: string;
+    };
+    totalQuantity: number;
+}
+
