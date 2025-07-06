@@ -3,8 +3,10 @@ import { baseApi } from "./baseApi";
 export const bookApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getBooks: builder.query({
-            query: () => "/books",
-            providesTags: ["Book"],
+            // query: () => "/books",
+            query: ({ filter = "", sortBy = "createdAt", sort = "dsc", limit = 10, page = 1 }) =>
+                `/books?filter=${filter}&sortBy=${sortBy}&sort=${sort}&limit=${limit}&page=${page}`,
+            providesTags: ["Book"], 
         }),
         getBookById: builder.query({
             query: (id) => `/books/${id}`,

@@ -27,14 +27,6 @@ const BorrowSummary = () => {
                     {data?.data?.map((borrow: IBorrow, index: number) => (
                         <BorrowBookCard key={index} borrow={borrow} />
                     ))}
-
-                    {/* {data?.data?.map((item: any, index: number) => (
-                        <tr key={index} className="text-center border-t">
-                            <td className="p-2">{item.book.title}</td>
-                            <td>{item.book.isbn}</td>
-                            <td>{item.totalQuantity}</td>
-                        </tr>
-                    ))} */}
                 </tbody>
             </table>
         </div>

@@ -7,10 +7,10 @@ export const borrowApi = baseApi.injectEndpoints({
             providesTags: ["Borrow"],
         }),
         borrowBook: builder.mutation({
-            query: (data) => ({
+            query: (body) => ({
                 url: "/borrow",
                 method: "POST",
-                body: data,
+                body,
             }),
             invalidatesTags: ["Book", "Borrow"],
         }),
