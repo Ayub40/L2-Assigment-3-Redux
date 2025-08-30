@@ -1,10 +1,10 @@
 import App from "@/App";
 import BookDetails from "@/module/AllBooks/BookDetails";
 import EditBook from "@/module/AllBooks/EditBook";
-import AllBooks from "@/pages/allBooks";
+import AllBooks from "@/pages/AllBooks";
 import BorrowBookForm from "@/pages/BorrowBookForm";
-import borrowSummary from "@/pages/borrowSummary";
-import createBooks from "@/pages/createBooks";
+import borrowSummary from "@/pages/BorrowSummary";
+import createBooks from "@/pages/CreateBooks";
 import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter([
@@ -14,6 +14,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
+                // Component: HeroSection,
                 Component: AllBooks,
             },
             {

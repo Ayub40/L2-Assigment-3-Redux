@@ -88,20 +88,6 @@ export default function BookCard({ book }: IProps) {
 
                     </div>
                 </TooltipProvider>
-
-
-                {/* <div className="flex justify-center gap-3 py-2 flex-wrap">
-                    <Link to={`/books/${book.id}`} className="text-blue-500">
-                        <View />
-                    </Link>
-                    <Link to={`/edit-book/${book.id}`} className="text-yellow-500">
-                        <Edit />
-                    </Link>
-                    <Link to={`/borrow/${book.id}`} className="text-green-600">              
-                        <Book />
-                    </Link>
-                    <button className="text-red-500"><Trash /></button>
-                </div> */}
             </td>
         </tr>
     );
